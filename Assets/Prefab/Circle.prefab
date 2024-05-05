@@ -10,6 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 35860568914003253}
   - component: {fileID: 7935801224614108651}
+  - component: {fileID: 5910130910525997058}
+  - component: {fileID: 466844361081642228}
+  - component: {fileID: 7805550642731643119}
+  - component: {fileID: 7567129512683159336}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Boid
@@ -84,3 +88,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5910130910525997058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349844019685706760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7034eefd6f87e04196263925768be38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 1, y: 1}
+  maxVelocity: 2
+--- !u!114 &466844361081642228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349844019685706760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d734690adf8a014fa264e51cfc505f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  neighborBoid: 0
+--- !u!114 &7805550642731643119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349844019685706760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994ef7d633e73e648b382565be37dc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  neighborBoid: 0
+--- !u!114 &7567129512683159336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349844019685706760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92aaa2f0dd85674c8f1375d184107ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1
+  separationForce: 10
+  neighborBoid: 0

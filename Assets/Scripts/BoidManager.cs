@@ -10,7 +10,7 @@ public class BoidManager : MonoBehaviour
 
     [SerializeField] int no_Of_Boids;
 
-    [SerializeField] Vector3 radius = new Vector3();
+    [SerializeField] Vector2 radius = new Vector2();
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class BoidManager : MonoBehaviour
 
         for (int i = 0; i < no_Of_Boids; i++)
         {
-            Vector3 position = transform.position + new Vector3(Random.Range(-radius.x, radius.x), Random.Range(-radius.y, radius.y), Random.Range(-radius.z, radius.z));
+            Vector2 position = transform.position + new Vector3(Random.Range(-radius.x, radius.x), Random.Range(-radius.y, radius.y));
             maxBoids[i] = Instantiate(boid, position, Quaternion.identity);
             maxBoids[i].transform.parent = parentGameObject.transform;
         }
